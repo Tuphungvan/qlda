@@ -1,0 +1,281 @@
+html,
+body,
+div,
+p,
+a,
+ol,
+ul,
+li,
+tbody,
+tfoot,
+thead,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  font-family: roboto condensed, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  min-width: 320px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.f-right {
+  float: right;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff2d21;
+}
+
+#header #top {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px dotted #d8d8d8;
+}
+
+#top .hotline {
+  color: #de523e;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#bot .dropdown-menu {
+  left: initial !important;
+  right: 0 !important;
+}
+
+#bot .mg-top-h {
+  margin-top: 23px;
+}
+
+.modal-title {
+  color: #de523e;
+  font-weight: 700;
+}
+
+#menu {
+  background: linear-gradient(to right, #1183f3, #11aef3);
+  height: 45px;
+}
+
+#main_menu {
+  list-style-type: none;
+  padding: 0;
+  z-index: 999;
+}
+
+#main_menu > li {
+  float: left;
+  z-index: 999;
+}
+
+#main_menu > li:last-child {
+  border-right: none;
+}
+
+#main_menu li {
+  position: relative;
+}
+
+#main_menu > li > a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-decoration: none;
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
+  z-index: 999;
+}
+
+#main_menu .sub_menu > li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+}
+
+#main_menu .sub_menu > li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+#main_menu .sub_menu > li:last-child {
+  border-bottom: none !important;
+}
+
+#main_menu li .sub_menu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background: #1182f2;
+  top: 0;
+  left: 100%;
+}
+
+#main_menu li:hover > .sub_menu {
+  display: block;
+}
+
+#main_menu > li > .sub_menu {
+  top: 45px;
+  position: absolute;
+  left: 0;
+}
+
+#main_menu :hover > .sub_menu li:hover,
+#main_menu li:hover {
+  background: #1572ce;
+}
+
+#main_menu :hover > .sub_menu li a:hover {
+  color: #fff;
+}
+
+#main_menu li.active {
+  background: #1572ce;
+}
+/* ------- */
+.uudai {
+  padding: 20px;
+  background-color: #f9f9f9; /* Màu nền của phần giới thiệu */
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff; /* Màu cho liên kết */
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3; /* Màu khi hover liên kết */
+}
+
+.breadcrumb span {
+  color: #333; /* Màu chữ cho span */
+}
+
+.breadcrumb a::after {
+  content: " / "; /* Biểu tượng phân tách giữa các liên kết */
+  color: #999;
+}
+
+.breadcrumb a:last-child::after {
+  content: ""; /* Bỏ biểu tượng phân tách cho phần tử cuối cùng */
+}
+/* thêm */
+/* Categories Section */
+.custom-category-section {
+  background-color: #f3f3e9; /* Màu kem cho khối danh mục */
+  padding: 20px; /* Thêm padding để không bị sát mép */
+  margin: 30px 80px; /* Khoảng cách giữa khối và các phần khác, rộng hơn */
+  box-shadow: none; /* Không có bóng */
+}
+
+/* Căn chỉnh hình ảnh trong khối card */
+.custom-card-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.custom-card-image {
+  flex: 1; /* Để chiếm nửa không gian còn lại */
+  display: flex;
+  justify-content: flex-end; /* Canh phải */
+}
+
+.custom-card-image img {
+  width: 600px; /* Đặt kích thước của ảnh */
+  height: auto;
+  margin-right: 80px; /* Đảm bảo hình ảnh căn lề bằng với khối Categories Section */
+}
+
+/* Categories Row */
+.custom-category-row {
+  display: flex; /* Sử dụng flexbox để xếp hàng ngang */
+  justify-content: space-between; /* Đảm bảo các mục đều cách đều */
+  margin-bottom: 20px; /* Khoảng cách giữa các hàng */
+}
+
+.custom-category {
+  text-align: center; /* Canh giữa nội dung trong mỗi mục */
+  flex: 1; /* Mỗi mục chiếm đều không gian */
+}
+
+.custom-category img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của mục */
+  height: auto; /* Giữ tỉ lệ của hình ảnh */
+  max-height: 80px; /* Đặt chiều cao tối đa cho hình ảnh */
+  object-fit: contain; /* Đảm bảo hình ảnh không bị biến dạng */
+}
+
+/* Search Section */
+.custom-search-section {
+  display: flex; /* Để xếp hàng các phần tử */
+  justify-content: center; /* Căn giữa toàn bộ phần tìm kiếm */
+  margin: 20px 0; /* Thêm khoảng cách phía trên và dưới */
+}
+
+.custom-search-section input[type="text"] {
+  padding: 10px; /* Thêm padding cho ô tìm kiếm */
+  border: 1px solid #ccc; /* Đường viền cho ô tìm kiếm */
+  border-radius: 4px; /* Bo góc nhẹ */
+  margin-right: 10px; /* Khoảng cách bên phải cho ô tìm kiếm */
+}
+
+.custom-search-section select {
+  padding: 10px; /* Thêm padding cho dropdown */
+  margin-right: 10px; /* Khoảng cách bên phải cho dropdown */
+}
+
+.custom-search-section button {
+  background-color: red; /* Màu đỏ cho nút tìm kiếm */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Không có đường viền */
+  padding: 10px 20px; /* Padding cho nút */
+  border-radius: 4px; /* Bo góc nút */
+  cursor: pointer; /* Con trỏ khi hover */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.custom-search-section button:hover {
+  background-color: darkred; /* Màu khi hover */
+}

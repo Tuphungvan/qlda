@@ -1,0 +1,311 @@
+html,
+body,
+div,
+p,
+a,
+ol,
+ul,
+li,
+tbody,
+tfoot,
+thead,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  font-family: roboto condensed, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  min-width: 320px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.f-right {
+  float: right;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff2d21;
+}
+
+#header #top {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px dotted #d8d8d8;
+}
+
+#top .hotline {
+  color: #de523e;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#bot .dropdown-menu {
+  left: initial !important;
+  right: 0 !important;
+}
+
+#bot .mg-top-h {
+  margin-top: 23px;
+}
+
+.modal-title {
+  color: #de523e;
+  font-weight: 700;
+}
+
+#menu {
+  background: linear-gradient(to right, #1183f3, #11aef3);
+  height: 45px;
+}
+
+#main_menu {
+  list-style-type: none;
+  padding: 0;
+  z-index: 999;
+}
+
+#main_menu > li {
+  float: left;
+  z-index: 999;
+}
+
+#main_menu > li:last-child {
+  border-right: none;
+}
+
+#main_menu li {
+  position: relative;
+}
+
+#main_menu > li > a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-decoration: none;
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
+  z-index: 999;
+}
+
+#main_menu .sub_menu > li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+}
+
+#main_menu .sub_menu > li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+#main_menu .sub_menu > li:last-child {
+  border-bottom: none !important;
+}
+
+#main_menu li .sub_menu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background: #1182f2;
+  top: 0;
+  left: 100%;
+}
+
+#main_menu li:hover > .sub_menu {
+  display: block;
+}
+
+#main_menu > li > .sub_menu {
+  top: 45px;
+  position: absolute;
+  left: 0;
+}
+
+#main_menu :hover > .sub_menu li:hover,
+#main_menu li:hover {
+  background: #1572ce;
+}
+
+#main_menu :hover > .sub_menu li a:hover {
+  color: #fff;
+}
+
+#main_menu li.active {
+  background: #1572ce;
+}
+/* ------- */
+.gioithieu {
+  padding: 20px;
+  background-color: #f9f9f9; /* Màu nền của phần giới thiệu */
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff; /* Màu cho liên kết */
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3; /* Màu khi hover liên kết */
+}
+
+.breadcrumb span {
+  color: #333; /* Màu chữ cho span */
+}
+
+.breadcrumb a::after {
+  content: " / "; /* Biểu tượng phân tách giữa các liên kết */
+  color: #999;
+}
+
+.breadcrumb a:last-child::after {
+  content: ""; /* Bỏ biểu tượng phân tách cho phần tử cuối cùng */
+}
+/* thêm */
+/* General section layout */
+.win-together-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Unified text style */
+.win-together-box,
+.benefits-box,
+.partner-box,
+.contact-box,
+.intro-text,
+.contact-title {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Benefits and partner box container */
+.benefits-box,
+.partner-box {
+  width: 80%; /* Centered and wider */
+  max-width: 1200px;
+  margin: 20px auto; /* Centered and spaced apart */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #000; /* Thin black border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title styling */
+.win-together-title {
+  text-align: center;
+  font-size: 24px;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  text-align: justify;
+  margin-bottom: 40px; /* Extra space for clarity */
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact information (red and left-aligned) */
+.contact-title {
+  font-size: 18px;
+  color: red;
+  margin-bottom: 10px;
+  text-align: left; /* Align to the left */
+  margin-left: 10%; /* Left align with the box content */
+}
+
+.contact-info {
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  margin-left: 10%; /* Align with boxes */
+}
+
+/* List items without bullets */
+.no-bullets {
+  list-style: none; /* Remove bullet points */
+  padding-left: 0;
+}
+
+/* List item styling */
+.no-bullets li {
+  margin-bottom: 8px; /* Space between items */
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .benefits-box,
+  .partner-box,
+  .intro-text {
+    width: 95%;
+  }
+
+  .win-together-title {
+    font-size: 22px;
+  }
+
+  .intro-text {
+    font-size: 15px;
+  }
+}
+/* ảnh */
+/* Image section styling */
+.image-section {
+  width: 80%; /* Same width as the boxes */
+  max-width: 1200px;
+  margin: 20px auto; /* Center the image and add spacing */
+}
+
+.image-section img {
+  width: 100%; /* Image takes full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove inline spacing */
+  border: 1px solid #000; /* Optional: Thin black border to match the boxes */
+}
